@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>TaskFlow — Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -17,32 +19,27 @@
         <!-- Clipboard/checklist SVG icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
-          <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
-          <path d="M9 14l2 2 4-4"/>
+          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+          <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+          <path d="M9 14l2 2 4-4" />
         </svg>
       </div>
       <h1 class="header-title">TaskFlow</h1>
+      <p class="version-label">Kubernetes Version 2</p>
       <p class="header-subtitle">Organize your day, one task at a time.</p>
     </header>
 
     <!-- ====== TASK INPUT ====== -->
     <section class="input-section" aria-label="Add a new task">
       <div class="input-wrapper">
-        <input
-          type="text"
-          id="taskInput"
-          class="task-input"
-          placeholder="What do you need to do?"
-          maxlength="200"
-          autocomplete="off"
-        >
+        <input type="text" id="taskInput" class="task-input" placeholder="What do you need to do?" maxlength="200"
+          autocomplete="off">
         <button id="addTaskBtn" class="btn-add" aria-label="Add task">
           <!-- Plus icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"/>
-            <line x1="5" y1="12" x2="19" y2="12"/>
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
           </svg>
           <span>Add Task</span>
         </button>
@@ -75,8 +72,8 @@
         <span class="progress-percent" id="progressPercent">0%</span>
       </div>
       <div class="progress-track">
-        <div class="progress-fill" id="progressFill" role="progressbar"
-          aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-fill" id="progressFill" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+          aria-valuemax="100"></div>
       </div>
     </section>
 
@@ -92,9 +89,9 @@
           <!-- Inbox/empty SVG icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
             <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89
-              A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+              A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
           </svg>
         </div>
         <p class="empty-title">No tasks yet</p>
@@ -112,4 +109,5 @@
   <!-- JavaScript — loaded at the end so the DOM is ready -->
   <script src="script.js"></script>
 </body>
+
 </html>
